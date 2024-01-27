@@ -1,0 +1,7 @@
+/.idea/
+/logs/
+/htdocs/upload
+/htdocs/data
+/htdocs/vendor
+/htdocs/.idea/
+.xml

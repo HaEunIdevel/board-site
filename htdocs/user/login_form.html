@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>로그인</title>
+    <script>
+        function login_check(){
+            if(!document.login.memId.value){
+                alert('아이디를 입력해주세요');
+                return;
+            }
+
+            if(!document.login.pw.value){
+                alert('비밀번호를 입력해주세요');
+                return;
+            }
+            document.login.submit()
+        }
+    </script>
+</head>
+<body>
+<form action="login.php" method="post" name="login">
+    <div>
+        <span>아이디</span>
+      <input type="text" name="memId" placeholder="아이디를 입력하세요"/>
+    </div>
+    <div>
+        <span>비밀번호</span>
+        <input type="password" name="pw" placeholder="비밀번호를 입력하세요"/><br>
+    </div>
+    <button onclick="login_check()">로그인</button>
+</form>
+</body>
+</html>
